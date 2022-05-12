@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Heading from './compononets/heading'
-import Navbar from './compononets/navbar'
-import TextArea from './compononets/textarea'
+import Heading from '../compononets/heading'
+import Navbar from '../compononets/navbar'
+import TextArea from '../compononets/textarea'
 
 export default function Home() {
   return (
