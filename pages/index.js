@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import ClearData from '../compononets/clearData'
 import Heading from '../compononets/heading'
 import Navbar from '../compononets/navbar'
 import TextArea from '../compononets/textarea'
@@ -16,6 +17,9 @@ export default function Home() {
         <Navbar/>
         <Heading/>
         <TextArea/>
+        <ClearData/>
       </div>
+      
   )
+  
 }
