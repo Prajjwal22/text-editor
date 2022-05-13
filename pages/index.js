@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import ClearData from '../compononets/clearData'
+import ClearData from '../compononets/cleardata'
 import Heading from '../compononets/heading'
 import Navbar from '../compononets/navbar'
 import TextArea from '../compononets/textarea'
