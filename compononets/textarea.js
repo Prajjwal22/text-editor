@@ -37,7 +37,6 @@ return (
         <p> You Text Summary: {content.trim().split(" ").length} words &amp; {content.length} characters</p>
 <button className="button"
                             onClick={() => {
-                                // Credit to https://www.codegrepper.com/code-examples/javascript/javascript+download+text+as+txt+file for this snippet
                                 const element = document.createElement("a")
                                 element.setAttribute(
                                     "href",
