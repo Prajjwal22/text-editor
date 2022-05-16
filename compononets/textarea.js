@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ClearData from "./clearData";
+import ClearData from "./cleardata";
 
 
 export default function TextArea (props) {
