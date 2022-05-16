@@ -1,11 +1,14 @@
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"; 
+import TextArea from "./textarea";
 
 export default function Navbar(){
     const {theme, setTheme } = useTheme();
 
     return (
+      <div>
+
         <button aria-label="Toggle Dark Mode"
         type="button"
         className="themeToggle"
@@ -13,6 +16,7 @@ export default function Navbar(){
         >
             <span>Dark/Light Mode</span>
         </button>
+        </div>
     )
 
 
