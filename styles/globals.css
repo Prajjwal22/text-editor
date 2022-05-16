@@ -31,3 +31,16 @@ textarea {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 16px;
 }
+
+.details {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.button {
+  margin: 15px;
+}

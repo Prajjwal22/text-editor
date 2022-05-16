@@ -17,7 +17,6 @@ export default function Home() {
         <Navbar/>
         <Heading/>
         <TextArea/>
-        <ClearData/>
       </div>
       
   )
