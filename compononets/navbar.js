@@ -1,7 +1,6 @@
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react"; 
-import TextArea from "./textarea";
 
 export default function Navbar(){
     const {theme, setTheme } = useTheme();
