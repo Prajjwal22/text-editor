@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 
 
-export default function TextArea () {
+export default function TextArea (props) {
     const [content, setContent] = useState("");
-    const defaultValue = "Just write anything ..."
-
+    const defaultValue = "Just write anything..."
 
 useEffect (() => {
     setContent(window.localStorage.getItem("content")|| defaultValue);
@@ -13,22 +12,30 @@ useEffect (() => {
 return (
 
     <div>
-    <div 
+    <textarea 
     onInput={(e) => 
-        window.localStorage.setItem("content", e.currentTarget.textContent)
+        window.localStorage.setItem("content", e.target.value)
     }
     onFocus={(e) => {
-        if(e.currentTarget.textContent==defaultValue)
-            e.currentTarget.textContent='';
+        if(e.target.value==defaultValue)
+            e.target.value='';
     }}
     onBlur={(e) => {
-        if(e.currentTarget.textContent=='')
-            e.currentTarget.textContent=defaultValue;
+        if(e.target.value=='')
+            e.target.value=defaultValue;
+    }}
+
+    onChange={(e) => {
+        setContent(e.target.value)
     }}
    
-    className="content" contentEditable="true">
-        {content} 
-    </div>  
+    className="container" value={content}>
+    </textarea> 
+
+    <div>
+        <p> You Text Summary: {content.trim().split(" ").length} words &amp; {content.length} characters</p>
+    </div>
+
     </div>
 
 )
