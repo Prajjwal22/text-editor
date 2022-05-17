@@ -7,7 +7,7 @@ export default function Navbar({ content }) {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className={details}>
+    <div className="details">
       <button
         aria-label="Toggle Dark Mode"
         type="button"
