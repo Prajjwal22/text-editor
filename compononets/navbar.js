@@ -7,7 +7,7 @@ export default function Navbar({ content }) {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div>
+    <div className={details}>
       <button
         aria-label="Toggle Dark Mode"
         type="button"
@@ -16,7 +16,6 @@ export default function Navbar({ content }) {
       >
         <span>Dark/Light Mode</span>
       </button>
-      <div className="details">
         <p>
           {" "}
           You Text Summary: {content.trim().split(" ").length} words &amp;{" "}
@@ -37,7 +36,6 @@ export default function Navbar({ content }) {
           Download Text File
         </button>
         <ClearData />
-      </div>
     </div>
   );
 }
