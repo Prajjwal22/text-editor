@@ -1,11 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import ClearData from '../compononets/cleardata'
-import Heading from '../compononets/heading'
-import Navbar from '../compononets/navbar'
-import TextArea from '../compononets/textarea'
+import Head from "next/head";
+import react, { useState } from "react";
+import Image from "next/image";
+import ClearData from "../compononets/cleardata";
+import Heading from "../compononets/heading";
+import Navbar from "../compononets/navbar";
+import TextArea from "../compononets/textarea";
 
 export default function Home() {
+  const [content, setContent] = useState("");
   return (
     <div>
       <Head>
@@ -14,11 +16,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <Navbar/>
-        <Heading/>
-        <TextArea/>
-      </div>
-      
-  )
-  
+      <Navbar content={content} />
+      <Heading />
+      <TextArea content={content} setContent={setContent} />
+    </div>
+  );
 }
