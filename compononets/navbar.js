@@ -11,7 +11,7 @@ export default function Navbar({ content }) {
       <button
         aria-label="Toggle Dark Mode"
         type="button"
-        className="themeToggle"
+        className="button"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
         <span>Dark/Light Mode</span>
