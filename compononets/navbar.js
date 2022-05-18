@@ -18,7 +18,7 @@ export default function Navbar({ content }) {
       </button>
         <p>
           {" "}
-          You Text Summary: {content.trim().split(" ").length} words &amp;{" "}
+          Your Text Summary: {((content.split(/([\S])+/) || []).length - 1) / 2} words &amp;{" "}
           {content.length} characters
         </p>
         <button
